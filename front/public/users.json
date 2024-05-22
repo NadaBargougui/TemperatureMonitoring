@@ -1,0 +1,12 @@
+{
+  "user": [
+    {
+      "email": "Nada Bargougui",
+      "password": "12345678"
+    },
+    {
+      "email": "admin",
+      "password": "admin"
+    }
+  ]
+}

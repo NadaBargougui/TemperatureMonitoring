@@ -1,0 +1,26 @@
+{
+  "name": "e-hack",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "firebase": "^10.12.0",
+    "firebase-admin": "^12.1.0",
+    "fs": "^0.0.1-security",
+    "http": "^0.0.1-security",
+    "http-proxy-middleware": "^3.0.0",
+    "json2csv": "^6.0.0-alpha.2",
+    "mqtt": "^5.6.1",
+    "node-rtsp-stream": "^0.0.9",
+    "nodemon": "^3.1.0",
+    "ws": "^8.16.0",
+    "wss": "^3.3.4"
+  },
+  "description": ""
+}
