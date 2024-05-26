@@ -1,6 +1,5 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState } from "react";
 import { Line } from "react-chartjs-2";
-import NotificationAlert from "react-notification-alert";
 import {
   Card,
   CardBody,
@@ -32,7 +31,6 @@ ChartJS.register(
 
 const Dashboard = () => {
   const [data, setData] = useState([]);
-  const notificationAlertRef = useRef();
 
   useEffect(() => {
     const fetchData = async () => {
@@ -52,36 +50,6 @@ const Dashboard = () => {
     const intervalId = setInterval(fetchData, 180000); // Fetch data every 5 seconds
     return () => clearInterval(intervalId); // Clean up interval on unmount
   }, []);
-
-  useEffect(() => {
-    if (data.length > 0) {
-      const latestTemperature = parseInt(data[data.length - 1].temperature);
-      showNotification(latestTemperature);
-    }
-  }, [data]);
-
-  const showNotification = (temperature) => {
-    let type;
-    let message;
-    if (temperature <= 15) {
-      type = "success";
-      message = <div>Temperature is low: {temperature} °C</div>;
-    } else if (temperature >= 20) {
-      type = "danger";
-      message = <div>Temperature is high: {temperature} °C</div>;
-    } else {
-      return; // Do not show notification if temperature is within normal range
-    }
-
-    const options = {
-      place: "tr", // top right
-      message: message,
-      type: type,
-      icon: "nc-icon nc-bell-55",
-      autoDismiss: 5,
-    };
-    notificationAlertRef.current.notificationAlert(options);
-  };
 
   const temperature = data.length > 0 ? parseInt(data[data.length - 1].temperature) : 0;
   const humidity = data.length > 0 ? parseInt(data[data.length - 1].humidity) : 0;
@@ -128,7 +96,6 @@ const Dashboard = () => {
   return (
     <>
       <div className="content">
-        <NotificationAlert ref={notificationAlertRef} />
         <Row>
           <Col lg="6" md="6" sm="6">
             <Card className="card-stats">
@@ -219,3 +186,4 @@ const Dashboard = () => {
 };
 
 export default Dashboard;
+
