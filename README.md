@@ -45,9 +45,9 @@ Set up Mosquitto MQTT broker on Raspberry Pi
 Steps to Run the Project
 
 # 1️⃣ Clone the repository
-'$ git clone https://github.com/NadaBargougui/TemperatureMonitoring.git'
+'git clone https://github.com/NadaBargougui/TemperatureMonitoring.git'
 
-'$ cd TemperatureMonitoring'
+'cd TemperatureMonitoring'
 
 # 2️⃣ Backend Setup
 $ cd backend
