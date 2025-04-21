@@ -6,38 +6,41 @@ The Temperature Monitoring System is an advanced IoT-based solution designed to 
 
 🚀 Features
 
-✅ Real-time Monitoring: Continuously measures and displays temperature values 📊
-✅ Data Logging: Stores temperature readings for historical analysis 📂
-✅ Web Dashboard: Interactive UI for monitoring temperature trends 💻
-✅ Alert System: Sends email notifications when temperature crosses predefined limits 🔔
-✅ MQTT Communication: Uses ESP32 to publish data to a Raspberry Pi-hosted Mosquitto broker 🔄
+✅ Real-time Monitoring: Continuously measures and displays temperature values 
+
+✅ Data Logging: Stores temperature readings for historical analysis 
+
+✅ Web Dashboard: Interactive UI for monitoring temperature trends 
+
+✅ Alert System: Sends email notifications when temperature crosses predefined limits 
+
+✅ MQTT Communication: Uses ESP32 to publish data to a Raspberry Pi-hosted Mosquitto broker 
+
 
 🛠️ Technologies Used
 
 Hardware
 
-⚡ ESP32 (Microcontroller)
+ESP32 (Microcontroller)
 
-🌡️ DHT22 (Temperature & Humidity Sensor)
+DHT22 (Temperature & Humidity Sensor)
 
-🍓 Raspberry Pi (Hosting MQTT Broker with Mosquitto)
+Raspberry Pi (Hosting MQTT Broker with Mosquitto)
 
 Software
 
-🟢 Node.js & Express.js (Backend API)
+🔷 Node.js & Express.js (Backend API)
 
 🔷 React.js (Frontend UI)
 
-📈 Chart.js (Data Visualization)
-
-🎨 Reactstrap (UI Components)
+🔷 Chart.js (Data Visualization)
 
 
 🏗️ Installation & Setup
 
 Prerequisites
 
-Install Node.js and npm 🟢
+Install Node.js and npm 
 
 Set up Mosquitto MQTT broker on Raspberry Pi 
 
@@ -66,11 +69,11 @@ $ npm start
 
 🎯 Usage Guide
 
-1️⃣ Power on the ESP32 microcontroller ⚡
-2️⃣ Navigate to the web dashboard to view real-time temperature data 📊
-3️⃣ Set threshold limits to receive email alerts when temperature exceeds safe limits 🔔
+1️⃣ Power on the ESP32 microcontroller 
+2️⃣ Navigate to the web dashboard to view real-time temperature data 
+3️⃣ Set threshold limits to receive email alerts when temperature exceeds safe limits 
 
 
 📞 Contact
 
-For any inquiries, feel free to reach out to Nada Bargougui via GitHub or email ✉️
+For any inquiries, feel free to reach out to Nada Bargougui via GitHub or email.
