@@ -53,13 +53,17 @@ Steps to Run the Project
 `cd TemperatureMonitoring`
 
 # 2️⃣ Backend Setup
-$ cd backend
+$ cd back
+
 $ npm install
+
 $ node server.js
 
 # 3️⃣ Frontend Setup
-$ cd frontend
+$ cd front
+
 $ npm install
+
 $ npm start
 
 💡 Ensure your Raspberry Pi is running the Mosquitto broker, and the ESP32 is publishing temperature data.
@@ -70,7 +74,9 @@ $ npm start
 🎯 Usage Guide
 
 1️⃣ Power on the ESP32 microcontroller 
+
 2️⃣ Navigate to the web dashboard to view real-time temperature data 
+
 3️⃣ Set threshold limits to receive email alerts when temperature exceeds safe limits 
 
 
